@@ -1,0 +1,23 @@
+<h1>Welcome to my Travel Page</h1>
+<p>Find me in app/views/welcome/index.html.erb</p>
+
+I am from <%= @homeland %>
+
+<ul>
+<% @countries.each do |country| %>
+	<li><%= country %></li>
+<% end %>
+</ul>
+
+<% @country_images.each do |country_image| %>
+	<%= image_tag country_image,:height => "20%",:width => "20%" %>
+<% end %>
+
+
+<%= image_tag "australia.jpg",height: 200,width: 200 %>
+
+<%= image_tag "italy.jpg",height: 200,width: 200 %>
+
+<%= image_tag "switzerland.jpg",height: 200,width: 200 %>
+
+<%= image_tag "europe.jpg",height: 200,width: 200 %>
